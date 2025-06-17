@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main class="contact__main">
+
+    <div class="contact__container--form">
+      <h2 class="contact__form--title">Gửi Góp ý</h2>
+
+      <!-- contact form -->
+      <form class="contact__form" id="contact__form">
+
+        <div class="contact__form--name">
+          <label for="contact__form--name">Họ Tên</label>
+          <input id="contact__form--name" type="text" placeholder="Vui lòng nhập họ tên của bạn" required>
+        </div>
+
+        <div class="contact__form--email">
+          <label for="contact__form--email">Email</label>
+          <input id="contact__form--email" type="email" placeholder="Vui lòng nhập địa chỉ email" required>
+        </div>
+
+        <div class="contact__form--select">
+          <label for="contact__form--select">Chủ đề</label>
+          <select id="contact__form--select" required>
+            <option value="">--Chọn chủ đề--</option>
+            <option value="Về dịch vụ">Về dịch vụ</option>
+            <option value="Về chính sách">Về chính sách</option>
+            <option value="Về ưu đãi">Về ưu đãi</option>
+          </select>
+        </div>
+
+        <div class="contact__form--textarea">
+          <label for="contact__form--textarea" class="contact__form--textarea--title">Nội dung</label>
+          <textarea name="contact__form--textarea" id="contact__form--textarea" rows="4" cols="32"
+            placeholder="Nội dung cần liên hệ"></textarea>
+        </div>
+
+        <button class="contact__form--button" type="submit">Gửi</button>
+      </form>
+    </div>
+
+    <!-- contact info -->
+    <div class="contact__container--info">
+
+      <div class="contact__container--details">
+        <h2 class="contact__info--title">Thông tin liên hệ</h2>
+        <div class="contact__info--text"><strong>Địa chỉ: </strong> <span>ABC, Ninh Kiều, Cần Thơ</span></div>
+        <div class="contact__info--text"><strong>Email: </strong> <span>meandry@gmail.com</span></div>
+        <div class="contact__info--text"><strong>Số điện thoại: </strong> <span>0123 456 789</span></div>
+        <div class="contact__info--text"><strong>Giờ làm việc: </strong> <span>8:00 - 17:00, Thứ 2 - Thứ 6</span></div>
+      </div>
+
+      <div class="contact__container--map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.841454377128!2d105.76804037586368!3d10.029938972517146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0895a51d60719%3A0x9d76b0035f6d53d0!2zxJDhuqFpIGjhu41jIEPhuqduIFRoxqE!5e0!3m2!1svi!2s!4v1749312202058!5m2!1svi!2s"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="./script.js"></script>
+
+</html>
